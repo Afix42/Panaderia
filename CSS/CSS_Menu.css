@@ -59,3 +59,8 @@ footer {
     color: #55524f;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.col-lg-1 {
+    padding-top: 11px;
+}
+
