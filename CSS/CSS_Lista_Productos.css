@@ -62,8 +62,10 @@ footer {
 
 .container-fluid-1 {
     background-color: #e69138;
+    padding-top: 7px;
 }
 
 .container-fluid-2 {
     background-color: #e6c4a1;
+    padding-top: 7px;
 }
