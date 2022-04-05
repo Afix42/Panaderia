@@ -5,6 +5,9 @@ body {
 .fondo {
     background-color: #f9cb9c;
 }
+.fondo2 {
+    background-color: #e69138;
+}
 
 h4 {
     padding-top: 35px;
@@ -24,3 +27,7 @@ h4 {
     text-align: justify;
 }
 
+a {
+    text-decoration:none;
+    font-size: 20px;
+}
