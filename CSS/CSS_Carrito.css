@@ -7,7 +7,7 @@ body {
 
 }
 .prod2 {
-    background-color: #e6c4a1;
+    background-color: #e6c4a1 !important;
 
 }
 h1 {
@@ -40,4 +40,14 @@ h4 {
 
 footer {
     background-color: #e2b27e;
+}
+
+tr:nth-child(even) {
+    background-color: #e2b27e;
+}
+
+
+.sad {
+    height: 80px;
+    width: 80px;
 }
