@@ -17,10 +17,9 @@ footer {
     position: relative;
 }
 .card img {
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
+    object-fit: none;
 }
 
 .cuerpo-card {
@@ -42,6 +41,13 @@ footer {
 .link-productos {
     padding-top: 11px;
     font-size: 30px;
+    text-align: center;
+}
+
+.img-logo img {
+    width: 16px;
+    height: 16px;
+    padding-right: 4px;
 }
 
 .pie-pagina {
