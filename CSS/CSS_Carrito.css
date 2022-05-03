@@ -51,3 +51,7 @@ tr:nth-child(even) {
     height: 80px;
     width: 80px;
 }
+
+.navbar a:hover {
+    background-color: #000;
+  }

@@ -52,3 +52,7 @@ footer {
 .img {
     border: 5px solid #555;
 }
+
+.navbar a:hover {
+    background-color: #000;
+  }

@@ -66,3 +66,7 @@ footer {
 .col-lg-1 {
     padding-top: 11px;
 }
+
+.navbar a:hover {
+    background-color: #000;
+  }
