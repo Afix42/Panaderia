@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" href="Imagenes\Logo_Panaderia.png">
+    <link type="text/css" rel="stylesheet" href="CSS/CSS_Formulario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Menu.html">
+        <img src="Imagenes/Logo_Panaderia.png" alt="logo_panaderia" width="40px" height="40px"> Bell Sabores
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="Menu.html">Inicio</a>
+          <a class="nav-link" href="Lista_Productos.html">Productos</a>
+          <a class="nav-link" href="Carrito.html">Carrito</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-5">
+      <div class="row">
+          <h1 class="colorLetra" style="text-align: center;">FORMULARIO DE REGISTRO</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-2 hidden-sm"></div>
+        <div class="col-md-8 col-sm-12">
+          <form name="formulario_registro" id="formulario_registro" method="post" action="#">
+            <fieldset>
+              <div class="form-group">
+                <label>Nombre</label>
+                <input name="nombre" type="text"  class="form-control" placeholder="Introduzca su nombre">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input name="email" type="email" class="form-control" placeholder="Introduzca su email">
+              </div>
+              <div class="form-group">
+                <label>Contraseña</label>
+                <input name="password" type="password" class="form-control" placeholder="Introduza su contraseña">
+              </div>
+              <div class="form-group">
+                <label>Confirmar contraseña</label>
+                <input name="password" type="password" class="form-control" placeholder="Reintroduza su contraseña">
+              </div>
+              <div class="button align-but">
+                <input name="up" type="submit" value="Enviar" class="">
+                <input name="res" type="reset" value="Borrar todo" class="">
+            </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-md-2 hiiden-sm"></div>
+      </div>
+
+    <script src="js/validacionesJQ.js"></script>
+  </div>
+
+</body>
+
+</html>
