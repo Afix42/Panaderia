@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrega un producto</title>
     <link rel="icon" href="..\Imagenes\Logo_Panaderia.png">
-    <link type="text/css" rel="stylesheet" href="../CSS/CSS_Formulario.css">
+    <link type="text/css" rel="stylesheet" href="..\CSS\CSS_Registro.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -40,60 +40,39 @@
         <div class=row>
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <form class="formulario" id="form" method="post" action="">
-                    <fieldset>
-                        <!-- Form Name -->
-                        <h1>Formulario de producto</h1>
+                <div class="container">
+                    <form action="" class="form" id="form" autocomplete="off">
+                      <p class="form-titulo">Agrega un producto</p>
+                      <div class="form-input nombre">
+                        <input type="text" id="nomProd">
+                        <label for="nomProd">Nombre</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-input">
+                        <input type="text" id="descProd">
+                        <label for="descProd">Descripción</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-input">
+                        <input type="number" id="precio">
+                        <label for="precio">Precio</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-input">
+                        <input type="number" id="cantidad">
+                        <label for="cantidad">Cantidad</label>
+                        <p class="mensajeError"></p>
+                      </div>
 
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label for="nomProd">Nombre de producto</label>
-
-                            <input name="nombre" class="form-control input-md" type="text" id="nomProd">
-
-                        </div>
-                        <div><p class="mostrarMensajeError"></p></div>
-
-                        <div class="form-group">
-                            <label for="descProd">Descripción del producto</label>
-
-                            <textarea class="form-control" name="Descripcion" id="descProd"></textarea>
-                        </div>
-
-
-                        <div class="form-group">
-                            <label for="precio">Precio</label>
-
-                            <input name="valor" class="form-control input-md" type="text" id="precio">
-
-                        </div>
-
-
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label for="Cantidad">Cantidad disponible</label>
-
-                            <input name="cantDisponible" class="form-control input-md" type="number" id="Cantidad">
-
-                        </div>
-
-                        <!-- File Button -->
-                        <div class="form-group">
-                            <label for="archivo">Imagen</label>
-
-                            <input id="archivo" name="btnArchivo" class="input-file" type="file">
-                        </div>
-
-
-                        <!-- Button -->
-                        <div class="form-group" style="text-align: center;">
-                            <button id="botonGuardar" name="boton" class="btn btn-primary" type="submit">Guardar
-                                producto</button>
-                        </div>
-                    </fieldset>
-                </form>
+                      <div class="form-boton">
+                        <input type="submit" value="Enviar">
+                      </div>
+                      <p class="mensajeCorrecto"></p>
+                    </form>
+                </div>
                 <div class="col-md-3"></div>
             </div>
+            <script src="..\JS\validacionAgregarProd.js"></script>
         </div>
     </div>
     <script src="../JS/validacionAgregarProd.js"></script>

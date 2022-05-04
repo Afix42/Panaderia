@@ -22,3 +22,11 @@ footer {
     border-radius: 20px;
 
 }
+
+.mensajeError {
+    color: rgb(184, 31, 31);
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
