@@ -11,7 +11,14 @@ footer {
     padding-top: 5px;
 }
 
-fieldset {
+.container-form {
+    padding-top: 60px;
+}
+
+.formulario {
     background-color: #fff;
-    margin: 10px;
+    padding-bottom: 5px;
+    border: 4px solid grey;
+    border-radius: 20px;
+
 }

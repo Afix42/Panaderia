@@ -70,3 +70,11 @@ footer {
     padding-bottom: 5px;
 }
 
+.navbar a:hover {
+    background-color: #000;
+  }
+
+.btn-danger {
+    margin-top: 3px;
+}
+
