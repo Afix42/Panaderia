@@ -5,11 +5,13 @@
 
 body {
   background-color: #e69138 !important;
-  background-image: url("https://fondosmil.com/fondo/73693.jpg");
-background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://fondosmil.com/fondo/73620.jpg");
+  background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
-  
+  position: absolute;
 }
 
 
