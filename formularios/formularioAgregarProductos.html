@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agrega un producto</title>
     <link rel="icon" href="..\Imagenes\Logo_Panaderia.png">
     <link type="text/css" rel="stylesheet" href="../CSS/CSS_Formulario.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -39,90 +40,55 @@
         <div class=row>
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <form class="formulario">
+                <form class="formulario" id="form" method="post" action="">
                     <fieldset>
                         <!-- Form Name -->
                         <h1>Formulario de producto</h1>
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label for="product_name">Nombre de producto</label>
+                            <label for="nomProd">Nombre de producto</label>
 
-                            <input id="product_name" name="product_name" placeholder="NOMBRE PRODUCTO"
-                                class="form-control input-md" required="" type="text">
+                            <input name="nombre" class="form-control input-md" type="text" id="nomProd">
 
                         </div>
+                        <div><p class="mostrarMensajeError"></p></div>
 
-                        <!-- Textarea -->
                         <div class="form-group">
-                            <label for="product_description">Descripción del producto</label>
+                            <label for="descProd">Descripción del producto</label>
 
-                            <textarea class="form-control" id="product_description"
-                                name="product_description"></textarea>
+                            <textarea class="form-control" name="Descripcion" id="descProd"></textarea>
                         </div>
 
-                        <!-- Search input-->
-                        <div class="form-group">
-                            <label for="stock_critical">Precio</label>
 
-                            <input id="stock_critical" name="stock_critical" class="form-control input-md" required=""
-                                type="search">
+                        <div class="form-group">
+                            <label for="precio">Precio</label>
+
+                            <input name="valor" class="form-control input-md" type="text" id="precio">
 
                         </div>
 
 
                         <!-- Text input-->
                         <div class="form-group">
-                            <label for="available_quantity">Cantidad disponible</label>
+                            <label for="Cantidad">Cantidad disponible</label>
 
-                            <input id="available_quantity" name="available_quantity" placeholder="CANTIDAD DISPONIBLE"
-                                class="form-control input-md" required="" type="text">
-
-                        </div>
-
-
-
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label for="percentage_discount">Porcentaje de descuento</label>
-
-                            <input id="percentage_discount" name="percentage_discount" class="form-control input-md"
-                                required="" type="text">
-
-                        </div>
-
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label for="stock_alert">Stock bajo</label>
-
-                            <input id="stock_alert" name="stock_alert" placeholder="STOCK BAJO"
-                                class="form-control input-md" required="" type="text">
-
-                        </div>
-
-
-
-
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label for="online_date">Fecha</label>
-
-                            <input id="online_date" name="online_date" placeholder="ONLINE DATE"
-                                class="form-control input-md" required="" type="text">
+                            <input name="cantDisponible" class="form-control input-md" type="number" id="Cantidad">
 
                         </div>
 
                         <!-- File Button -->
                         <div class="form-group">
-                            <label for="filebutton">Imagen</label>
+                            <label for="archivo">Imagen</label>
 
-                            <input id="filebutton" name="filebutton" class="input-file" type="file" required>
+                            <input id="archivo" name="btnArchivo" class="input-file" type="file">
                         </div>
 
 
                         <!-- Button -->
                         <div class="form-group" style="text-align: center;">
-                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar producto</button>
+                            <button id="botonGuardar" name="boton" class="btn btn-primary" type="submit">Guardar
+                                producto</button>
                         </div>
                     </fieldset>
                 </form>
@@ -130,6 +96,7 @@
             </div>
         </div>
     </div>
+    <script src="../JS/validacionAgregarProd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
