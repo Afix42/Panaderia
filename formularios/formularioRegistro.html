@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="icon" href="Imagenes\Logo_Panaderia.png">
-    <link type="text/css" rel="stylesheet" href="../CSS/CSS_Formulario.css">
+    <link type="text/css" rel="stylesheet" href="../CSS/CSS_Registro.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
@@ -28,58 +28,60 @@
       </div>
     </div>
   </nav>
-
   <div class="container-fluid container-form">
       <div class="row">
         <div class="col-md-2 hidden-sm"></div>
-        <div class="col-md-8 col-sm-12 formulario">
-          <h1 style="text-align: center;">CREAR UNA CUENTA</h1>
-          <form name="formulario_registro" id="formulario_registro" method="post" action="#">
-            <fieldset>
-              <div class="form-group">
-                <label>Nombre</label>
-                <input name="nombre" type="text"  class="form-control" placeholder="Introduzca su nombre">
+        <div class="col-md-8 col-sm-12">
+          <div class="container">
+            <form action="" class="form" id="form" autocomplete="off">
+              <p class="form-titulo">Regístrate</p>
+              <div class="form-input nombre">
+                <input type="text" id="nombre">
+                <label for="nombre">Nombre</label>
+                <p class="mensajeError"></p>
               </div>
-              <div class="form-group">
-                <label>Email</label>
-                <input name="email" type="email" class="form-control" placeholder="Introduzca su email">
+              <div class="form-input apellido">
+                <input type="text" id="apellido">
+                <label for="apellido">Apellidos</label>
+                <p class="mensajeError"></p>
               </div>
-              <div class="form-group">
-                <label>Contraseña</label>
-                <input name="password" type="password" class="form-control" placeholder="Introduza su contraseña">
+              <div class="form-input email">
+                <input type="email" id="email">
+                <label for="email">Correo electrónico</label>
+                <p class="mensajeError"></p>
               </div>
-              <div class="form-group">
-                <label>Confirmar contraseña</label>
-                <input name="password" type="password" class="form-control" placeholder="Reintroduza su contraseña">
+              <div class="form-input celular">
+                <input type="text" id="celular">
+                <label for="celular">Celular</label>
+                <p class="mensajeError"></p>
               </div>
-              <div class="button align-but">
-                <input name="up" type="submit" value="Enviar" class="btn btn-secondary">
-                <input name="res" type="reset" value="Borrar datos" class="btn btn-secondary">
-            </div>
-            </fieldset>
-            <div>
-              <p>Ya tienes una cuenta? <a href="formularioLogin.html">Iniciar sesión</a></p>
-            </div>
-          </form>
+              <div class="form-input password">
+                <input type="password" id="password">
+                <label for="password">Contraseña</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input repeatPassword">
+                <input type="password" id="repeatPassword">
+                <label for="repeatPassword">Repetir Contraseña</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-terminos terminos">
+                <input type="checkbox" id="terminos"> 
+                <label for="terminos">He leído y acepto los </label>
+                <a href="#">Términos y Condiciones</a>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-boton" >
+                <input type="submit" value="Enviar">
+              </div>
+              <p class="mensajeCorrecto"></p>
+            </form>
         </div>
         <div class="col-md-2 hiiden-sm"></div>
       </div>
-
-    <script src="js/validacionesJQ.js"></script>
+    <script src="../js/form.js"></script>
   </div>
 
 </body>
-
-<footer>
-  <div class="container-fluid pie-pagina pt-3 pb-3">
-    <div class="row">
-      <h2>Informacion de contacto:</h2>
-      <h4><u>Siguenos en nuestras redes sociales!!!</u></h4>
-    </div>
-      <img src="Imagenes/Logo_Whatsapp.png"  width="60" height="60" alt="Logo_Whatsapp" >
-      <a href="https://www.instagram.com/" target="_blank"><img src="Imagenes/Logo_Instagram.png" width="60" height="60" alt="Logo_Instagram"></a>
-      <a href="https://www.facebook.com/" target="_blank"><img src="Imagenes/Logo_Facebook.png" width="60" height="60" alt="Logo_Facebook"></a>
-  </div>
-</footer>
 
 </html>
