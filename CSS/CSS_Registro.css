@@ -3,15 +3,15 @@
   box-sizing: border-box;
 }
 
-  body{
-    height: 800px;
-    background-image: url("../Imagenes/fondo.jpg");
-    background-size: cover;
-    background-size: 25rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-  }
+body {
+  background-color: #e69138 !important;
+  background-image: url("https://fondosmil.com/fondo/73693.jpg");
+background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+
 .container {
   /* border: 3px solid red; */
   max-width: 90%;
@@ -21,8 +21,8 @@
 
 :root {
   --cfondo: rgb(207, 211, 212);
-  --cfondoForm1: rgba(1, 80, 88, 0.39);
-  --cfondoForm2: rgb(129, 193, 202);
+  --cfondoForm1: rgb(204, 103, 8);;
+  --cfondoForm2: rgb(202, 189, 129);
   --cnegro: black;
   --ctexto: rgb(14, 81, 88);
   --ctextoDark: rgb(1, 35, 39);
