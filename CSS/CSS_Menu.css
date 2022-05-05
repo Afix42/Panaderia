@@ -70,3 +70,9 @@ footer {
 .navbar a:hover {
     background-color: #000;
   }
+
+  #map {
+    height: 350px;
+    width: 350px;
+    
+}
